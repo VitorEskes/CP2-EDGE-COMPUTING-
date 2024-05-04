@@ -1,0 +1,30 @@
+Link para a simulação do projeto: https://wokwi.com/projects/396810541874265089
+
+COMO FUNCIONA
+  -Montagem
+  
+  Conecte o pino de dados do DHT11 (pino 2) ao pino 2 do Arduino.
+  Conecte o pino VCC do DHT11 (pino 1) ao pino 5V do Arduino.
+  Conecte o pino GND do DHT11 (pino 4) ao pino GND do Arduino.
+  Conecte o pino RS do display LCD (pino 4) ao pino 12 do Arduino.
+  Conecte o pino E do display LCD (pino 6) ao pino 11 do Arduino.
+  Conecte os pinos D4-D7 do display LCD aos pinos 5-8 do Arduino.
+  Conecte o pino do LED vermelho ao pino 9 do Arduino através de um resistor de 220Ω.
+  Conecte o pino do LED amarelo ao pino 10 do Arduino através de um resistor de 220Ω.
+  Conecte o pino do LED verde ao pino 13 do Arduino através de um resistor de 220Ω.
+
+  -Software
+  
+  Instale a biblioteca DHT para Arduino: https://github.com/adafruit/DHT-sensor-library
+  Baixe o código do projeto neste repositório.
+  Abra o código no Arduino IDE.
+  Selecione a placa Arduino UNO e porta serial correta.
+  Carregue o código para o Arduino.
+
+  -Funcionamento
+  
+  O sistema monitora a temperatura, umidade e luminosidade do ambiente a cada segundo. Os valores são lidos do sensor DHT11 e do sensor de luminosidade do Arduino. Em seguida, os valores são exibidos no display LCD e os LEDs são acendidos de acordo com os seguintes critérios:
+  
+  LED vermelho: Acende se a temperatura estiver acima de 30°C ou abaixo de 20°C.
+  LED amarelo: Acende se a umidade estiver acima de 60% ou abaixo de 40%.
+  LED verde: Acende se a luminosidade estiver entre 100 e 500 lux.
